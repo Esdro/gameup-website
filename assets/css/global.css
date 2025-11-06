@@ -4,7 +4,64 @@ Coded by - @Esdro
 
 */
 
+/* Global settings */
+
+:root {
+  --accent-color: #6b27a7;
+  --button-bg: #645376;
+  --text-white: #fff;
+  --indigo-dark: #2e1250;
+  --accent-five: #1b0b2e;
+  --accent-bg: #f3eff0;
+  --full-rounded: 50%;
+  --rouded-lg: 25px;
+  --rouded-sm: 5px;
+  --rounded-md: 15px;
+  --size-sm: 17px;
+  --size-md: 37px;
+  --size-lg: 57px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/fonnts.com-Aeonik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik Bold";
+  src: url("../fonts/fonnts.com-Aeonik-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-    margin: 0;
-    background-color: #efefef;
+  margin: 0;
+  background-color: var(--accent-bg);
+  color: var(--text-white);
+  font-family: "Aeonik", Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--accent-bg);
+  text-decoration: none;
+  font-size: var(--size-sm);
+}
+
+.page-centered {
+  width: 80%;
+  margin: auto;
 }
