@@ -1,0 +1,36 @@
+/* By Esdras */
+
+
+header {
+    width: 100%;
+}
+
+header > div.page-centered {
+    padding: 15px;
+    border: 2px solid;
+    margin-top: 25px;
+    border-radius: var(--rouded-lg);
+    gap: 50px;
+    background-color: var(--accent-color);
+    justify-content: center;
+}
+
+header > div, header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav  {
+  flex: auto;
+}
+
+header nav ul {
+    justify-content: center;
+    gap: 50px;
+}
+
