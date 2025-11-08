@@ -1,0 +1,39 @@
+h2, h3, p {
+    color: var(--accent-five);
+}
+
+#product-section {
+    
+}
+
+#main-section {
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#images-section {
+    display: flex;
+}
+
+#images-section ul img {
+    width: 150px;
+    height: 150px;
+}
+
+#images-section > img {
+    width: 600px;
+    height: 600px;
+}
+
+#summary-section {
+    flex-basis: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+}
