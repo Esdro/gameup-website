@@ -1,6 +1,6 @@
 /* 
 
-Coded by - @Esdro
+Created by - @Esdro
 
 */
 
@@ -21,11 +21,25 @@ Coded by - @Esdro
   --size-md: 37px;
   --size-lg: 57px;
 }
+/* changer les valeurs :root quand le thème de l'utilisateur change */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #1b0b2e;
+    --button-bg: #1b1b1b;
+    --indigo-dark: #c0b3d1;
+    --accent-five: #1b0b2e;
+    --accent-bg: #646363;
+  }
+}
+
+
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  vertical-align: middle !important;
 }
 
 @font-face {
@@ -66,6 +80,8 @@ a {
   margin: auto;
 }
 
+
+
 @media screen and (max-width: 780px) {
   :root {
     --size-sm: 12px;
@@ -77,11 +93,15 @@ a {
     width: 100%;
     padding: 15px;
   }
-  header > div.page-centered  {
+  header > div.page-centered {
     margin-top: 0 !important;
     border-radius: var(--rouded-sm) !important;
   }
   header h1 {
     font-size: var(--size-md);
   }
+}
+
+.card {
+  color: var(--accent-bg);
 }
