@@ -1,3 +1,7 @@
+body {
+    margin: 0 1em;
+}
+
 h2, h3, p {
     color: var(--accent-five);
 }
@@ -11,7 +15,9 @@ h2, h3, p {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    background-color: var(--button-bg);
 }
+
 
 #images-section {
     display: flex;
@@ -36,4 +42,60 @@ h2, h3, p {
 
 .rating {
     display: flex;
+}
+
+.comments {
+    background-color: var(--button-bg);
+    width: 50vw;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.comments > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--accent-bg);
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.comment:not(:last-child) {
+    margin-bottom: .5em;
+}
+
+.user {
+    width: 5em;
+    height: 5em;
+    border-radius: 5em;
+}
+
+form {
+    width: 50vw;
+}
+
+form .rating {
+    margin-left: 75%;
+}
+
+form input {
+    display: block;
+}
+
+textarea {
+    width: 75%;
+    height: 5em;
+    resize: vertical;
+}
+
+.similar {
+    max-width: 20em;
+    max-height: 20em;
+    width: auto;
+    height: auto;
 }
