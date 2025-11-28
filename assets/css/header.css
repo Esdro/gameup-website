@@ -11,7 +11,7 @@ header > div.page-centered {
     margin-top: 25px;
     border-radius: var(--rouded-lg);
     gap: 50px;
-    background-color: var(--accent-color);
+    background-color: var(--indigo-dark);
     justify-content: center;
 }
 

@@ -1,0 +1,36 @@
+.main-site-title {
+    margin-top: 50px;
+    text-transform: uppercase ;
+    font-weight: bolder;
+}
+
+section#about {
+    margin: 100px 0;
+    min-height: 90vh;
+    background-color: var(--accent-bg);
+    border-radius: var(--rouded-lg);
+    color: var(--accent-five);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    padding: 30px;
+    gap: 35px;
+}
+
+section#about h2 {
+    margin-top: 0;
+    margin-right: var(--size-lg);
+    margin-bottom: 0;
+    text-align: right;
+    /* flex: 100%; */
+    width: 100%;
+    font-size: var(--size-lg);
+}
+
+section#about p {
+    font-size: var(--size-md);
+    line-height: 1.4;
+    margin: 0 20px;
+    text-align: center;
+}
