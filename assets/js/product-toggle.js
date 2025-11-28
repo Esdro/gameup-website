@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Récupérer toutes les images de produits
     const allProductImages = document.querySelectorAll('.hero-left img');
     
-    // Récupérer le titre du produit et la div hero-bottom
+    // Récupérer le titre du produit et la div hero-right
     const productSubtitle = document.querySelector('.product-subtitle');
-    const heroBottom = document.querySelector('.hero-bottom');
+    const heroRight = document.querySelector('.hero-right');
 
-    // Initialiser hero-bottom comme visible par défaut
-    if (heroBottom) {
-        heroBottom.classList.add('expanded');
+    // Initialiser hero-right comme visible par défaut
+    if (heroRight) {
+        heroRight.classList.add('expanded');
     }
 
     productLinks.forEach(link => {
@@ -40,12 +40,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 productSubtitle.textContent = `Product ${productId}`;
             }
 
-            // Réinitialiser et réanimer hero-bottom
-            if (heroBottom) {
-                heroBottom.classList.remove('expanded');
-                // Force un reflow pour réinitialiser l'animation
-                void heroBottom.offsetHeight;
-                heroBottom.classList.add('expanded');
+            // Réinitialiser et réanimer hero-right
+            if (heroRight) {
+                heroRight.classList.remove('expanded');
+                // Force un reflow avec setTimeout
+                setTimeout(() => {
+                    heroRight.classList.add('expanded');
+                }, 100);
             }
         });
     });

@@ -64,14 +64,6 @@ main .hero img {
 .hero-top .hero-right {
   flex: 3;
   font-size: calc(var(--size-md) - 7px);
-}
-
-.hero-top .hero-right a {
-  margin-top: 25px;
-  display: inline-block;
-}
-
-.hero-bottom {
   height: 0;
   overflow: hidden;
   transform: scaleY(0);
@@ -79,9 +71,14 @@ main .hero img {
   transition: height 0.4s ease, transform 0.4s ease;
 }
 
-.hero-bottom.expanded {
+.hero-top .hero-right.expanded {
   height: auto;
   transform: scaleY(1);
+}
+
+.hero-top .hero-right a {
+  margin-top: 25px;
+  display: inline-block;
 }
 
 .hero-bottom ul {
