@@ -1,36 +1,99 @@
 .main-site-title {
-    margin-top: 50px;
-    text-transform: uppercase ;
-    font-weight: bolder;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 section#about {
-    margin: 100px 0;
-    min-height: 90vh;
-    background-color: var(--accent-bg);
-    border-radius: var(--rouded-lg);
-    color: var(--accent-five);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;    
-    padding: 30px;
-    gap: 35px;
+  margin: 100px 0;
+  min-height: 90vh;
+  background-color: var(--accent-bg);
+  border-radius: var(--rouded-lg);
+  color: var(--accent-five);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  gap: 35px;
 }
 
 section#about h2 {
-    margin-top: 0;
-    margin-right: var(--size-lg);
-    margin-bottom: 0;
-    text-align: right;
-    /* flex: 100%; */
-    width: 100%;
-    font-size: var(--size-lg);
+  margin-top: 0;
+  margin-right: var(--size-lg);
+  margin-bottom: 0;
+  text-align: right;
+  /* flex: 100%; */
+  width: 100%;
+  font-size: var(--size-lg);
 }
 
 section#about p {
-    font-size: var(--size-md);
-    line-height: 1.4;
-    margin: 0 20px;
-    text-align: center;
+  font-size: var(--size-md);
+  line-height: 1.4;
+  margin: 0 20px;
+  text-align: center;
+}
+
+main .hero {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  flex-direction: column;
+}
+main .hero > div:first-child {
+  margin-bottom: 30px;
+  display: flex;
+  gap: calc(var(--size-lg) - 20px);
+}
+main .hero img {
+  border-radius: var(--rouded-lg);
+}
+
+.hero-top {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.hero-top .hero-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-top .hero-right {
+  flex: 3;
+  font-size: calc(var(--size-md) - 7px);
+  height: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: height 0.4s ease, transform 0.4s ease;
+}
+
+.hero-top .hero-right.expanded {
+  height: auto;
+  transform: scaleY(1);
+}
+
+.hero-top .hero-right a {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.hero-bottom ul {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-bottom ul li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
