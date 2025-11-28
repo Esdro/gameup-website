@@ -1,0 +1,48 @@
+html {
+  max-width: 100ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+body {
+    background-color: purple;
+        
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+title, h1, h2, h3, h4, p {
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 20px;
+    padding: 5px 15px;
+    /* border: 20px;
+    border-color: black; */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+tr{ 
+    display: flex;
+
+}
+
+td {
+    
+    justify-content: space-between;
+
+}
