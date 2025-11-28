@@ -1,31 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game-up Website</title>
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/main-page.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
+
 <body>
 
- <!-- Header Section -->
+    <!-- Header Section -->
 
     <header>
-     <div class="page-centered">
-        <div class="logo">
-            <h1>Game-up</h1>
-     </div>
+        <div class="page-centered">
+            <div class="logo">
+                <h1>Game-up</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/gameup-website/pages/all-products/">Products</a></li>
+                    <li><a href="/gameup-website/pages/about/">About Us</a></li>
+                    <li><a href="/gameup-website/pages/contact/">Contact</a></li>
+                    <!--  <li><a href="/gameup-website/pages/contact/">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-centered">
+        <h1 class="main-site-title">Make and Game up </h1>
+        <p class="subtitle">Slay while you play</p>
+        <div class="hero">
+            <div class="hero-top">
+                <div class="hero-left">
+                    <img src="./assets/images/products/hollow_knight/hollow_knight_1.png" alt="Image produit 1">
+                </div>
+                <div class="hero-right">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem tempora deleniti architecto,
+                        rerum repudiandae error nobis?</p>
+                    <a href="#" class="button-link">Go shop </a>
+                </div>
+            </div>
+            <div class="hero-bottom">
+                <ul class="products-links">
+                    <li class="product-2">
+                        <a href="#">Product 2 </a>
+                    </li>
+                    <li class="product-3">
+                        <a href="#">Product 3 </a>
+                    </li>
+                    <li class="product-show-more">
+                        <a href="#">Show more </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="about-us" id="about">
+            <h2>About us </h2>
+            <p class="about_infos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et, aliquid quaerat
+                totam facere doloribus sit nisi maiores molestiae esse, reprehenderit provident sed molestias earum
+                quibusdam qui voluptatem dolorem, magni fuga eaque nam libero? Iusto esse labore at quidem quia maxime
+                laboriosam! Nemo, natus reprehenderit!</p>
+            <a href="./pages/about/index.html" class="link-as-button">More information about us </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h3 class="site-title-on-footer">
+            Make and Game up
+        </h3>
         <nav>
-            <ul>
-                <li><a href="/gameup-website/pages/all-products/">Products</a></li>
-                <li><a href="/gameup-website/pages/about/">About Us</a></li>
-                <li><a href="/gameup-website/pages/contact/">Contact</a></li>
-            <!--  <li><a href="/gameup-website/pages/contact/">Contact</a></li> -->
+            <ul class="list-unstyled">
+                <li class="list-item"><a href="index.html" class="page-link">Home</a></li>
+                <li class="list-item"><a href="./pages/all-products/index.html" class="page-link">Products</a></li>
+                <li class="list-item"><a href="./pages/about/index.html" class="page-link">About us</a></li>
             </ul>
         </nav>
-     </div>
-    </header>
-    
+        <p class="copy">&copy; 2025 | All rights reserved </p>
+    </footer>
 </body>
+
 </html>

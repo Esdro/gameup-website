@@ -23,7 +23,7 @@ Created by - @Esdro
 }
 /* changer les valeurs :root quand le thème de l'utilisateur change */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #1b0b2e;
     --button-bg: #1b1b1b;
@@ -31,15 +31,54 @@ Created by - @Esdro
     --accent-five: #1b0b2e;
     --accent-bg: #646363;
   }
+} */
+
+[class*="icon-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+[class$="-title"] {
+  font-size: var(--size-lg);
+  font-weight: bolder;
+  margin: 10px 0;
+  text-align: center;
 }
 
+[class$="btitle"] {
+  font-size: var(--size-md);
+  font-weight: bolder;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 500px;
+  text-align: right;
+}
+[class$="as-button"] {
+  font-size: var(--size-md);
+  font-weight: normal;
+  margin: 5px 0 20px 0;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: var(--accent-five);
+  border-radius: var(--rounded-md);
+}
 
+[class$="as-button"]:hover {
+  background-color: var(--accent-bg);
+  border-radius: var(--rounded-md);
+  border: 2px solid var(--accent-five);
+  color: var(--accent-five);
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   vertical-align: middle !important;
+  transition: all 0.3s ease-in-out;
 }
 
 @font-face {
@@ -58,7 +97,7 @@ Created by - @Esdro
 
 body {
   margin: 0;
-  background-color: var(--accent-bg);
+  background-color: var(--accent-five);
   color: var(--text-white);
   font-family: "Aeonik", Arial, Helvetica, sans-serif;
 }
