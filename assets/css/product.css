@@ -21,7 +21,6 @@ h2, h3, p {
     border-radius: .5em;
 }
 
-
 #images-section {
     display: flex;
 }
@@ -41,6 +40,11 @@ h2, h3, p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#summary-section input {
+    padding: .5em;
+    font-size: 1.5em;
 }
 
 .rating {
@@ -124,4 +128,5 @@ textarea {
 
 input[type='submit'] {
     padding: .5em;
+    font-size: 1em;
 }
