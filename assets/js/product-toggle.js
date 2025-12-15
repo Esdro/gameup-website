@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Récupérer l'ID du produit depuis l'attribut data
             const productId = this.getAttribute('data-product-id');
 
+            // Récupérer le nom du produit depuis l'attribut data
+            const productName = this.getAttribute('data-product-name');
+
             // Masquer toutes les images
             allProductImages.forEach(img => {
                 img.classList.remove('visible');
@@ -37,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Changer le titre du produit
             if (productSubtitle) {
-                productSubtitle.textContent = `Product ${productId}`;
+                productSubtitle.textContent = productName;
             }
 
             // Réinitialiser et réanimer hero-right
