@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const productSubtitle = document.querySelector('.product-subtitle');
     const heroRight = document.querySelector('.hero-right');
 
+    // Récupérer le bouton Go Shop
+    const goShop = heroRight.querySelector('a');
+
     // Initialiser hero-right comme visible par défaut
     if (heroRight) {
         heroRight.classList.add('expanded');
@@ -42,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (productSubtitle) {
                 productSubtitle.textContent = productName;
             }
+
+            // Récupérer le a du li
+            const a = link.querySelector('a');
+
+            // Changer le lien du bouton Go Shop
+            goShop.setAttribute('href', a.getAttribute('href'));
 
             // Réinitialiser et réanimer hero-right
             if (heroRight) {
