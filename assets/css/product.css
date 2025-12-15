@@ -1,5 +1,3 @@
-
-
 h2, h3, p {
     color: var(--accent-bg);
 }
@@ -21,6 +19,15 @@ h2, h3, p {
 
 #images-section {
     display: flex;
+    border: solid 5px var(--accent-five);
+}
+
+#images-section img {
+    object-fit: cover;
+}
+
+#images-section ul li:not(:last-child) {
+    border-bottom: solid 5px var(--accent-five);
 }
 
 #images-section ul img {
@@ -29,8 +36,9 @@ h2, h3, p {
 }
 
 #images-section > img {
-    width: 600px;
-    height: 600px;
+    width: 615px;
+    height: 615px;
+    border-left: solid 5px var(--accent-five);
 }
 
 #summary-section {
