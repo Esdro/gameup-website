@@ -1,0 +1,37 @@
+
+section.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 50vw;
+    margin: 2em auto;
+    background-color: var(--button-bg);
+    padding: 2em;
+    border-radius: .5em;
+}
+section.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+section.contact-form label {
+    font-weight: bold;
+}
+section.contact-form input,
+section.contact-form textarea {
+    padding: 0.5em;
+    border: 1px solid var(--text-five);
+    border-radius: 0.25em;
+}
+section.contact-form form  button {
+    background-color: var(--accent-color);
+    color: var(--button-text);
+    border: none;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+section.contact-form form  button:hover {
+    background-color: var(--button-bg);
+}
