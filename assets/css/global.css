@@ -76,7 +76,7 @@ Created by - @Esdro
 [class$="button-inverted"] {
   background-color: var(--accent-bg);
   color: var(--accent-five);
-  font-size: var(--size-md);
+  font-size: calc(var(--size-md) - 10px);
   border: 2px solid var(--accent-five);
   font-weight: bolder;
   padding: 20px 40px;
